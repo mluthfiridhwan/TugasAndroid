@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonationActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="100dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtPickLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="75dp"
+                    android:padding="10dp"
+                    android:text="Pick Location"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/pickLocation"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:onClick="lokasi"
+                    android:clickable="true"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@color/colorPrimary"
+                    app:srcCompat="@drawable/ic_location_searching" />
+
+                <TextView
+                    android:id="@+id/latTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="175dp"
+                    android:layout_marginTop="70dp"
+                    android:padding="10dp"
+                    android:textSize="10dp"
+                    android:text="Latitude: "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/longtTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="175dp"
+                    android:layout_marginTop="90dp"
+                    android:padding="10dp"
+                    android:textSize="10dp"
+                    android:text="Longitude: "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/lat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="70dp"
+                    android:padding="10dp"
+                    android:textSize="10dp"
+                    android:text="-"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/longt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="90dp"
+                    android:padding="10dp"
+                    android:textSize="10dp"
+                    android:text="-"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/locationSet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Location"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="130dp"
+                    android:padding="10dp"/>
+
+                <EditText
+                    android:id="@+id/edTxtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/locationSet"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Your Name"
+                    android:padding="10dp"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/edTxtFoodName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edTxtName"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Food Name"
+                    android:padding="10dp"
+                    android:textSize="14dp" />
+
+
+                <EditText
+                    android:id="@+id/edTxTPortion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edTxtFoodName"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Portion of Food"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/donate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edTxTPortion"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rec_gradient"
+                    android:onClick="donate"
+                    android:padding="10dp"
+                    android:text="Donate"
+                    android:textColor="@android:color/white"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="@drawable/selector_bottom_nav"
+        app:itemTextColor="@drawable/selector_bottom_nav"
+        app:elevation="4dp"
+        app:menu="@menu/navigation" />
+
+
+</RelativeLayout>

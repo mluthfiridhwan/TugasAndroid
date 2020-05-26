@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "523506387060",
+    "firebase_url": "https://suapin-1553862274889.firebaseio.com",
+    "project_id": "suapin-1553862274889",
+    "storage_bucket": "suapin-1553862274889.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523506387060:android:725ab173c33cf8b4",
+        "android_client_info": {
+          "package_name": "com.example.mluth.suapin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523506387060-93nc8hcarq2vdqsq2kb7s11vccaqmj6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4dIQIedEo6eSIU5z6sBleC-gmTVSEBWk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
